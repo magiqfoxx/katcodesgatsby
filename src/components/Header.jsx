@@ -25,28 +25,32 @@ const Terminal = styled.div`
 const Header = () => {
   const [command, setCommand] = useState("")
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   console.log(command)
+  //   if (command.startsWith("cd")) {
+  //     let page = command.slice(3)
+  //     navigate(`/${page}/`)
+  //     //ls
+  //     //help
+  //   }
+  // }, [command])
+  const onSubmit = e => {
+    e.preventDefault()
     console.log(command)
     if (command.startsWith("cd")) {
       let page = command.slice(3)
-      navigate(`/${page}/`)
+      navigate(`/${page}/#start`)
       //ls
       //help
-    }
-  }, [command])
-  const newCommand = command => {
-    console.log(command)
-    if (command === "cd projects") {
     }
   }
   return (
     <StyledHeader>
       <Background />
       <Terminal>
-        <Input value={command} onChange={e => newCommand(e.target.value)} />
-        <button onClick={() => navigate(`/projects/#projects`)}>
-          go to projects
-        </button>
+        <form onSubmit={onSubmit}>
+          <Input value={command} onChange={e => setCommand(e.target.value)} />
+        </form>
       </Terminal>
     </StyledHeader>
   )

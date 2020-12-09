@@ -29,13 +29,18 @@ const StyledInput = styled.input`
   color: #8bc34a;
 `
 
-const Input = () => {
+const Input = ({ value, onChange }) => {
   return (
     <>
       <Label htmlFor="terminal">C:/Users/magiqfoxx:~</Label>
       <InputWrapper>
         <Cursor />
-        <StyledInput name="terminal" id="terminal" />
+        <StyledInput
+          name="terminal"
+          id="terminal"
+          value={value}
+          onChange={onChange}
+        />
       </InputWrapper>
     </>
   )

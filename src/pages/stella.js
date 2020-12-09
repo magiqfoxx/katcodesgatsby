@@ -10,7 +10,13 @@ export default function Home() {
     <Container>
       <Layout />
       <Background />
-      <Data>Stella</Data>
+      <h1>Have you seen this cat?</h1>
+      <img src="" />
+      <p>She is not missing. I just wanted to show you</p>
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <a href="instagram/stellaewunia">Support Stella on patreon</a>
     </Container>
   )
 }

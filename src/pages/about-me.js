@@ -63,7 +63,7 @@ const Redacted = styled.span`
 
 export default function Home() {
   return (
-    <Container id="about-me">
+    <Container id="start">
       <Layout />
       <Background />
       <Confidential>
