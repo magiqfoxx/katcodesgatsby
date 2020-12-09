@@ -20,6 +20,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -28,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -48,7 +50,19 @@ table {
     text-decoration:inherit;
     color:inherit;
   }
+  html {
+  -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+}
   *{
 	  font-family: Rokkitt, Arial, Helvetica, sans-serif !important;
+
   }`
 export default GlobalStyle
