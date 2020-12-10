@@ -10,7 +10,7 @@ const StyledData = styled.main`
   min-height: 100vh;
   width: 100vw;
   background: black;
-  padding-left: 10rem;
+  padding: 4rem;
   * {
     font-family: "Courier New", Courier, monospace;
     color: white;

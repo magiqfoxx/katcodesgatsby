@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import Layout from "./Layout"
+
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
@@ -10,7 +12,7 @@ const Container = styled.div`
   padding: 4rem;
   box-sizing: border-box;
   line-height: 3rem;
-  position: ${props => (!props.index ? "relative" : "absolute")};
+  /* position: ${props => (!props.index ? "relative" : "absolute")}; */
   color: #8bc34a;
   top: 0;
   left: 0;
@@ -38,6 +40,7 @@ const Text = styled.p`
 const Background = () => {
   return (
     <Container>
+      <Layout />
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

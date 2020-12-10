@@ -1,6 +1,6 @@
 import React from "react"
 
-import Background from "../components/Background"
+import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Container from "../components/Container"
 import projects from "../components/projects/projects"
@@ -10,8 +10,7 @@ import { Classified, Title } from "../components/projects/styled"
 export default function Home() {
   return (
     <Container>
-      <Layout />
-      <Background />
+      <Header />
       <Classified>
         <Title id="start">Classified</Title>
         {projects.map(project => (
