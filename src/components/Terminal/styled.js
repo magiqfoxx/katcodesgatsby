@@ -12,16 +12,19 @@ export const Window = styled.div`
 export const TitleBar = styled.div`
   display: flex;
   flex-direction: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: rgb(244, 244, 244);
   border-bottom: rgb(107, 107, 107);
   height: 22px;
+  position: relative;
 `
 export const Buttons = styled.div`
   display: flex;
   margin-left: 8px;
+  position: absolute;
+  left: 0;
   img {
     position: relative;
     width: 8px;
@@ -93,6 +96,7 @@ export const Label = styled.label`
   color: rgb(40, 212, 17);
   font-family: sans-serif;
   font-size: 12px;
+  margin-right
 `
 
 export const StyledInput = styled.input`

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from "../components/Header"
-import Container from "../components/Container"
+import Layout from "../components/Layout"
 import {
   Confidential,
   DocumentHeader,
@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <Container id="start">
+    <Layout id="start">
       <Header />
       <Confidential>
         <DocumentHeader>
@@ -49,6 +49,6 @@ export default function Home() {
         </p>
         <p>Love, Kat</p>
       </Confidential>
-    </Container>
+    </Layout>
   )
 }

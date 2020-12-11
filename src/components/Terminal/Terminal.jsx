@@ -61,7 +61,6 @@ const Terminal = () => {
           <Image src="/drive.png" alt="hard drive" />
           <TitleText>Kat's mac - bash - 80 x 24</TitleText>
         </Title>
-        <div />
       </TitleBar>
       <Content>
         <Text>Last login: Thu Dec 10 21:41:33 on ttys001</Text>

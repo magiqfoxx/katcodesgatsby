@@ -1,11 +1,11 @@
 import React from "react"
 
 import Header from "../components/Header"
-import Container from "../components/Container"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <Container>
+    <Layout>
       <Header />
       <h1>Have you seen this cat?</h1>
       <img src="" />
@@ -14,6 +14,6 @@ export default function Home() {
       <img src="" />
       <img src="" />
       <a href="instagram/stellaewunia">Support Stella on patreon</a>
-    </Container>
+    </Layout>
   )
 }
