@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useState, useRef, useEffect } from "react"
 
-import Input from "../Input"
 import {
   Window,
   TitleBar,
+  Buttons,
   Off,
   Hide,
   Resize,
@@ -12,25 +12,74 @@ import {
   TitleText,
   Content,
   Text,
+  StyledInput,
+  Label,
+  Command,
 } from "./styled"
+import { runCommand } from "../../helpers/navigation"
 
 const Terminal = () => {
+  const textInput = useRef(null)
+  const [command, setCommand] = useState("")
+  const [focused, setFocused] = useState(
+    document.activeElement === textInput.current
+  )
+
+  const onFocus = () => {
+    textInput.current.focus()
+    setFocused(true)
+  }
+  const onBlur = () => {
+    console.log("blur")
+    textInput.current.blur()
+    setFocused(false)
+  }
+
+  useEffect(() => {
+    onFocus()
+  }, [])
+
+  const onSubmit = e => {
+    e.preventDefault()
+    runCommand(command)
+  }
   return (
-    <Window>
+    <Window onClick={onFocus}>
       <TitleBar>
-        <div>
-          <Off />
-          <Hide />
-          <Resize />
-        </div>
+        <Buttons>
+          <Off>
+            <img src="/quit.svg" alt="quit" />
+          </Off>
+          <Hide>
+            <img src="/minimize.svg" alt="hide" />
+          </Hide>
+          <Resize>
+            <img src="/resize.svg" alt="resize" />
+          </Resize>
+        </Buttons>
         <Title>
-          <Image src="" alt="hard drive" />
+          <Image src="/drive.png" alt="hard drive" />
           <TitleText>Kat's mac - bash - 80 x 24</TitleText>
         </Title>
+        <div />
       </TitleBar>
       <Content>
         <Text>Last login: Thu Dec 10 21:41:33 on ttys001</Text>
-        <Input />
+        <form onSubmit={onSubmit}>
+          <Label htmlFor="terminal" data-value={command}>
+            Is-that-me-or-was-that-you:~ guest$
+          </Label>
+          <Command>{command}</Command>
+          <StyledInput
+            name="terminal"
+            id="terminal"
+            value={command}
+            focused={focused}
+            onChange={e => setCommand(e.target.value)}
+            ref={textInput}
+            role="input"
+          />
+        </form>
       </Content>
     </Window>
   )

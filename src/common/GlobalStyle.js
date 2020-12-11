@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -63,6 +64,6 @@ table {
 }
   *{
 	  font-family: Rokkitt, Arial, Helvetica, sans-serif !important;
-
+	  box-sizing: border-box;
   }`
 export default GlobalStyle
