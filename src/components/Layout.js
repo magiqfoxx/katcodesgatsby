@@ -11,7 +11,11 @@ const Layout = ({ children }) => {
   return (
     <Container>
       <GlobalStyle theme={themeContext.theme} />
-      <Menu setTheme={themeContext.setTheme} theme={themeContext.theme} />
+      <Menu
+        setTheme={themeContext.setTheme}
+        theme={themeContext.theme}
+        themeName={themeContext.name}
+      />
       {children}
     </Container>
   )

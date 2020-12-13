@@ -11,7 +11,7 @@ import {
   Button,
 } from "./styled"
 
-const Menu = ({ setTheme, theme }) => {
+const Menu = ({ setTheme, theme, themeName }) => {
   const [open, setOpen] = useState(false)
   return (
     <>
@@ -24,12 +24,10 @@ const Menu = ({ setTheme, theme }) => {
           </ChooseTheme>
           {open && (
             <ItemDropdown>
-              <Item>
-                {theme === "dark" && "\u2713"}
+              <Item selected={themeName === "dark"}>
                 <Button onClick={() => setTheme("dark")}>Dark</Button>
               </Item>
-              <Item>
-                {theme === "light" && "\u2713"}
+              <Item selected={themeName === "light"}>
                 <Button onClick={() => setTheme("light")}>Light</Button>
               </Item>
             </ItemDropdown>

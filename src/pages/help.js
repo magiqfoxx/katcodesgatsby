@@ -8,14 +8,17 @@ export default function Home() {
     <Layout>
       <Header
         message={
-          <p>
-            GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
-            <br />
-            These shell commands are defined internally. Type `help' to see this
-            list.
-            <br />
-            A star (*) next to a name means that the command is disabled.
-            <br />
+          <>
+            <p>
+              GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
+              <br />
+              These shell commands are defined internally. Type `help' to see
+              this list.
+              <br />
+              A star (*) next to a name means that the command is disabled.
+              <br />
+            </p>
+
             <ul>
               <li>cd [-L|-P] [dir]</li>
               <li>ls pwd [-LP]</li>
@@ -27,7 +30,7 @@ export default function Home() {
               <li>touch* [-f | -i] [-dPRrvW] file ...</li>
               <li>open* [-f | -i] [-dPRrvW] file ...</li>
             </ul>
-          </p>
+          </>
         }
       />
     </Layout>

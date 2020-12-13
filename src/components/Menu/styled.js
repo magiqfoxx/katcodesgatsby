@@ -53,6 +53,10 @@ export const Item = styled.li`
     background-color: rgb(156, 156, 156);
     color: white;
   }
+  ::before {
+    content: "\u2713";
+    opacity: ${props => (props.selected ? 1 : 0)};
+  }
 `
 export const Button = styled.button`
   background-color: transparent;

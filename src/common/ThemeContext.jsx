@@ -5,17 +5,24 @@ import themes from "../common/themes"
 const ThemeContext = React.createContext({
   theme: themes.light,
   setTheme: () => {},
+  name: "light",
 })
 
 const supportsDarkMode = () =>
   window.matchMedia("(prefers-color-scheme: dark)").matches === true
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light")
+  const [themeName, setThemeName] = useState("light")
   useEffect(() => {
-    supportsDarkMode && setTheme("dark")
+    supportsDarkMode && setThemeName("dark")
   }, [])
   return (
-    <ThemeContext.Provider value={{ theme: themes[theme], setTheme: setTheme }}>
+    <ThemeContext.Provider
+      value={{
+        name: themeName,
+        theme: themes[themeName],
+        setTheme: setThemeName,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   )
