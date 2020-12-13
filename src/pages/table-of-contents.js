@@ -1,13 +1,20 @@
 import React from "react"
 
-const TableOfContents = () => {
+import Header from "../components/Header"
+import Layout from "../components/Layout"
+
+export default function TableOfContents() {
   return (
-    <ul id="start">
-      <li>about me</li>
-      <li>projects</li>
-      <li>stella</li>
-    </ul>
+    <Layout>
+      <Header
+        message={
+          <ul>
+            <li>about-me</li>
+            <li>projects</li>
+            <li>stella</li>
+          </ul>
+        }
+      />
+    </Layout>
   )
 }
-
-export default TableOfContents

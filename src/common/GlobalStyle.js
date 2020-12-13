@@ -53,7 +53,10 @@ table {
   }
   html {
   -webkit-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
+  --color-text: ${({ theme }) => theme.text};
+  --color-background: ${({ theme }) => theme.background};
+  --color-primary: ${({ theme }) => theme.primary};;
 }
 
 *,

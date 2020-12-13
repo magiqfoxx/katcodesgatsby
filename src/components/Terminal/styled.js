@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Window = styled.div`
   width: 400px;
   height: 300px;
-  background-color: black;
+  background-color: var(--color-background);
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid rgb(156, 156, 156);
@@ -84,7 +84,7 @@ export const Content = styled.div`
   height: 100%;
   padding: 4px;
   font-size: 12px;
-  color: rgb(40, 212, 17);
+  color: var(--color-text);
   font-family: sans-serif;
   cursor: text;
 `
@@ -93,21 +93,21 @@ export const Text = styled.p`
 `
 
 export const Label = styled.label`
-  color: rgb(40, 212, 17);
+  color: var(--color-text);
   font-family: sans-serif;
   font-size: 12px;
-  margin-right
+  margin-right: 5px;
 `
 
 export const StyledInput = styled.input`
   background-color: #0000001a;
-  color: rgb(40, 212, 17);
+  color: var(--color-text);
   :focus {
     outline: none;
   }
-  border: 1px solid rgb(40, 212, 17);
+  border: 1px solid var(--color-text);
   background-color: ${props =>
-    props.focused ? "rgb(40, 212, 17)" : "transparent"};
+    props.focused ? "var(--color-text)" : "transparent"};
   width: 1px;
   animation: blink-animation 1s steps(5, start) infinite;
   @keyframes blink-animation {

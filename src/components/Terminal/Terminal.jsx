@@ -18,7 +18,7 @@ import {
 } from "./styled"
 import { runCommand } from "../../helpers/navigation"
 
-const Terminal = () => {
+const Terminal = ({ message }) => {
   const textInput = useRef(null)
   const [command, setCommand] = useState("")
   const [focused, setFocused] = useState(
@@ -79,6 +79,7 @@ const Terminal = () => {
             role="input"
           />
         </form>
+        {message}
       </Content>
     </Window>
   )

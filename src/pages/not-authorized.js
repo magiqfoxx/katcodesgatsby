@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 export default function Home() {
   return (
     <Layout>
-      <Header message={<span>-bash: cd/: No such file or directory</span>} />
+      <Header message={<span>Not Authorized</span>} />
     </Layout>
   )
 }

@@ -1,6 +1,14 @@
 import React from "react"
 
-import { StyledDock, Background, Mail, Github } from "./styled"
+import {
+  StyledDock,
+  Background,
+  Mail,
+  Github,
+  Terminal,
+  DockItemWrapper,
+  ActiveDot,
+} from "./styled"
 
 const Dock = () => {
   return (
@@ -13,6 +21,10 @@ const Dock = () => {
         <a href="https://github.com/magiqfoxx">
           <Github src="/github.png" alt="github" />
         </a>
+        <DockItemWrapper>
+          <Terminal src="/terminal.png" alt="terminal" />
+          <ActiveDot />
+        </DockItemWrapper>
       </StyledDock>
     </>
   )

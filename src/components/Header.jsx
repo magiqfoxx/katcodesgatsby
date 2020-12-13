@@ -15,10 +15,10 @@ const StyledHeader = styled.header`
   background-size: cover;
 `
 
-const Header = () => {
+const Header = ({ message }) => {
   return (
     <StyledHeader>
-      <Terminal />
+      <Terminal message={message} />
       <Dock />
     </StyledHeader>
   )
