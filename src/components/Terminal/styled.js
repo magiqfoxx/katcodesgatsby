@@ -87,6 +87,9 @@ export const Content = styled.div`
   color: var(--color-text);
   font-family: sans-serif;
   cursor: text;
+  p {
+    line-height: 14px;
+  }
 `
 export const Text = styled.p`
   margin: 1px 0;
