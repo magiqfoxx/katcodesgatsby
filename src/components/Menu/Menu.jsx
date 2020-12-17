@@ -13,22 +13,58 @@ import {
 
 const Menu = ({ setTheme, theme, themeName }) => {
   const [open, setOpen] = useState(false)
+  const selectTheme = (e, theme) => {
+    setTheme(theme)
+    setOpen(false)
+    e.stopPropagation()
+  }
   return (
     <>
       <StyledMenu>
         <Apple src="/apple.svg" alt="apple" />
         <Title>Terminal</Title>
-        <Dropdown onBlur={() => setOpen(true)}>
-          <ChooseTheme open={open} onClick={() => setOpen(true)}>
+        <Dropdown
+          onBlur={e => {
+            e.stopPropagation()
+            // setOpen(false)
+          }}
+        >
+          <ChooseTheme open={open} onClick={() => setOpen(!open)}>
             Choose theme
           </ChooseTheme>
           {open && (
             <ItemDropdown>
-              <Item selected={themeName === "dark"}>
-                <Button onClick={() => setTheme("dark")}>Dark</Button>
+              <Item
+                selected={themeName === "dark"}
+                onClick={e => {
+                  e.stopPropagation()
+                  selectTheme(e, "dark")
+                }}
+              >
+                <Button
+                  onClick={e => {
+                    e.stopPropagation()
+                    selectTheme(e, "dark")
+                  }}
+                >
+                  Dark
+                </Button>
               </Item>
-              <Item selected={themeName === "light"}>
-                <Button onClick={() => setTheme("light")}>Light</Button>
+              <Item
+                selected={themeName === "light"}
+                onClick={e => {
+                  e.stopPropagation()
+                  selectTheme(e, "dark")
+                }}
+              >
+                <Button
+                  onClick={e => {
+                    e.stopPropagation()
+                    selectTheme(e, "light")
+                  }}
+                >
+                  Light
+                </Button>
               </Item>
             </ItemDropdown>
           )}

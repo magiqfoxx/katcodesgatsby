@@ -1,29 +1,31 @@
 import React from "react"
 
-const Project = ({ img, title, technologies, url, description }) => {
+import { ProjectTitle, Stack, Link } from "./styled"
+
+const Project = ({ img, title, technologies, url, github, description }) => {
   return (
     <table>
       <thead></thead>
       <tbody>
         <tr>
-          <td rowSpan="3">
+          <td>
             <img src={img} alt="" />
           </td>
-          <td>Title:</td>
-          <td>{title}</td>
-        </tr>
-        <tr>
-          <td>Technologies: </td>
-          <td>{technologies}</td>
-        </tr>
-        <tr>
-          <td>Live:</td>
           <td>
-            <a href={url}>{url}</a>{" "}
+            <ProjectTitle>{title}</ProjectTitle>
+            <Link href={url}>Live at</Link>
+            <Link href={github}>Code</Link>
+            <Stack>
+              <ul>
+                {technologies.map(t => {
+                  return <li>{t}</li>
+                })}
+              </ul>
+            </Stack>
           </td>
         </tr>
         <tr>
-          <td colSpan="3">{description}</td>
+          <td colSpan="2">{description}</td>
         </tr>
       </tbody>
     </table>
