@@ -21,9 +21,7 @@ import { runCommand } from "../../helpers/navigation"
 const Terminal = ({ message }) => {
   const textInput = useRef(null)
   const [command, setCommand] = useState("")
-  const [focused, setFocused] = useState(
-    document.activeElement === textInput.current
-  )
+  const [focused, setFocused] = useState(true)
 
   const onFocus = () => {
     textInput.current.focus()
