@@ -15,7 +15,7 @@ import {
   Link,
 } from "../components/Stella/styled"
 
-export default function Stella() {
+export default function () {
   const [picture, setPicture] = useState("")
   const [isOpen, setIsOpen] = useState(false)
 

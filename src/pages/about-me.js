@@ -10,7 +10,7 @@ import {
   Redacted,
 } from "../components/about-me/styled"
 
-export default function Home() {
+export default function () {
   return (
     <Layout id="start">
       <Header />

@@ -6,7 +6,7 @@ import projects from "../components/projects/projects"
 import Project from "../components/projects/Project"
 import { Classified, Title } from "../components/projects/styled"
 
-export default function Home() {
+export default function () {
   return (
     <Layout>
       <Header />

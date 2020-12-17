@@ -11,7 +11,7 @@ export const Confidential = styled.div`
   min-height: 100vh;
   width: 100vw;
   flex-direction: column;
-  background-image: url(/images/paper.jpg);
+  background-image: url("/images/paper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   * {
