@@ -27,7 +27,7 @@ export const DocumentHeader = styled.div`
   width: 100%;
   justify-content: space-around;
   padding-bottom: 6rem;
-  background-image: url(./confidential.webp);
+  background-image: url("/confidential.webp");
   background-repeat: no-repeat;
   background-size: contain;
 `

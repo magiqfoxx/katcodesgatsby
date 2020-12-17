@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Confidential>
         <DocumentHeader>
-          <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/United_States_Department_of_Defense_Seal.svg/1200px-United_States_Department_of_Defense_Seal.svg.png" />
+          <Icon src="/stamp.png" />
           <Address>
             December 9, annus horribilis
             <br />
