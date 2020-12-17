@@ -28,7 +28,7 @@ export default function Stella() {
       <Header />
       <Wrapper>
         <Title>Have you seen this cat?</Title>
-        <Image src="/stella/1.jpg" alt="Close up of cat's face" />
+        <Image src="/images/stella/1.jpg" alt="Close up of cat's face" />
         <Button onClick={() => alert("Good for you!")}>I have now</Button>
         <Text>
           Because she is freaking awesome!
@@ -38,22 +38,22 @@ export default function Stella() {
         </Text>
         <Pictures>
           <Picture
-            src="/stella/4.jpg"
+            src="/images/stella/4.jpg"
             alt="Cat looking down at a dead green bug"
             onClick={() => viewPicture("/stella/4.jpg")}
           />
           <Picture
-            src="/stella/5.jpg"
+            src="/images/stella/5.jpg"
             alt="Cat chilling in the sun"
             onClick={() => viewPicture("/stella/5.jpg")}
           />
           <Picture
-            src="/stella/2.jpg"
+            src="/images/stella/2.jpg"
             alt="Cat dressed up in a jacket, ready for a walk"
             onClick={() => viewPicture("/stella/2.jpg")}
           />
           <Picture
-            src="/stella/3.jpg"
+            src="/images/stella/3.jpg"
             alt="Cat sitting on top of a fridge, resembles a gremlin"
             onClick={() => viewPicture("/stella/3.jpg")}
           />
@@ -63,7 +63,7 @@ export default function Stella() {
           💕Support Stella on patreon💕
         </Link>
         <img
-          src="/stella/6.jpg"
+          src="/images/stella/6.jpg"
           alt="Closeup of a cat's face wearing reindeer costume"
         />
       </Wrapper>

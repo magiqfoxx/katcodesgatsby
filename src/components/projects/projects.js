@@ -1,6 +1,6 @@
 export default [
   {
-    img: "/projects/lisez-moi.gif",
+    img: "/images/projects/lisez-moi.gif",
     title: "Lisez Moi",
     technologies: ["React", "Redux", "Express.js"],
     url: "tbd",
@@ -9,7 +9,7 @@ export default [
       "Learning new language by repetition. Add the words you want to learn with cues (pictures, audio, examples) and let us generate a study session for you.",
   },
   {
-    img: "/projects/petshare.gif",
+    img: "/images/projects/petshare.gif",
     title: "Petshare",
     technologies: [
       "React (ContextAPI, Hooks, Portals)",
@@ -21,7 +21,7 @@ export default [
       "Social-media type website for pet owners. After creating an account, users can write posts, add pictures and comments.",
   },
   {
-    img: "/projects/games.gif",
+    img: "/images/projects/games.gif",
     title: "Games",
     technologies: ["React", "Redux", "Sass"],
     url: "link",
@@ -30,7 +30,7 @@ export default [
       "Play one of the classic games: memo, simon says or sliding tiles",
   },
   {
-    img: "/projects/doggopedia.gif",
+    img: "/images/projects/doggopedia.gif",
     title: "Doggopedia",
     technologies: ["React", "Wikipedia API"],
     url: "https://github.com/magiqfoxx/doggopedia",
@@ -38,7 +38,7 @@ export default [
     description: "Learn about dog breeds and test your knowledge",
   },
   {
-    img: "/projects/city-break.gif",
+    img: "/images/projects/city-break.gif",
     title: "City Break",
     technologies: ["React", "different APIs"],
     url: "https://github.com/magiqfoxx/city-break",
@@ -46,7 +46,7 @@ export default [
     description: "Get basic information on the place you want to go to",
   },
   {
-    img: "/projects/dog-center.gif",
+    img: "/images/projects/dog-center.gif",
     title: "Dog Adoption Center",
     technologies: ["React", "React-Router"],
     url: "https://github.com/magiqfoxx/dog-adoption-center",
@@ -55,7 +55,7 @@ export default [
       "Our dogs are looking for a forever home and you just might be it",
   },
   {
-    img: "/projects/trig-periapt.gif",
+    img: "/images/projects/trig-periapt.gif",
     title: "Trig Periapt",
     technologies: ["HTML", "CSS"],
     url: "https://magiqfoxx.github.io/trig-periapt/",

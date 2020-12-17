@@ -11,7 +11,7 @@ export const Confidential = styled.div`
   min-height: 100vh;
   width: 100vw;
   flex-direction: column;
-  background-image: url(./paper.jpg);
+  background-image: url(/images/paper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   * {
@@ -27,7 +27,7 @@ export const DocumentHeader = styled.div`
   width: 100%;
   justify-content: space-around;
   padding-bottom: 6rem;
-  background-image: url("/confidential.webp");
+  background-image: url("/images/confidential.webp");
   background-repeat: no-repeat;
   background-size: contain;
 `

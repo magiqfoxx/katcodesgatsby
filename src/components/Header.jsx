@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background: url("/bg.jpg");
+  background: url("/images/bg.jpg");
   background-size: cover;
 `
 

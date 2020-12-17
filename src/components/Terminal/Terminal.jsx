@@ -46,17 +46,17 @@ const Terminal = ({ message }) => {
       <TitleBar>
         <Buttons>
           <Off>
-            <img src="/quit.svg" alt="quit" />
+            <img src="/images/quit.svg" alt="quit" />
           </Off>
           <Hide>
-            <img src="/minimize.svg" alt="hide" />
+            <img src="/images/minimize.svg" alt="hide" />
           </Hide>
           <Resize>
-            <img src="/resize.svg" alt="resize" />
+            <img src="/images/resize.svg" alt="resize" />
           </Resize>
         </Buttons>
         <Title>
-          <Image src="/drive.png" alt="hard drive" />
+          <Image src="/images/drive.png" alt="hard drive" />
           <TitleText>Kat's mac - bash - 80 x 24</TitleText>
         </Title>
       </TitleBar>

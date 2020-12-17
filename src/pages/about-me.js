@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Confidential>
         <DocumentHeader>
-          <Icon src="/stamp.png" />
+          <Icon src="/images/stamp.png" />
           <Address>
             December 9, annus horribilis
             <br />

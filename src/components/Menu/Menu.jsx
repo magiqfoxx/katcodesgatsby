@@ -21,7 +21,7 @@ const Menu = ({ setTheme, theme, themeName }) => {
   return (
     <>
       <StyledMenu>
-        <Apple src="/apple.svg" alt="apple" />
+        <Apple src="/images/apple.svg" alt="apple" />
         <Title>Terminal</Title>
         <Dropdown
           onBlur={e => {
