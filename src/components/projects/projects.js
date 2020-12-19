@@ -24,7 +24,7 @@ export default [
     img: "/images/projects/games.gif",
     title: "Games",
     technologies: ["React", "Redux", "Sass"],
-    url: "link",
+    url: "https://magiqfoxx.github.io/Games-App/#/",
     github: "https://github.com/magiqfoxx/Games-App",
     description:
       "Play one of the classic games: memo, simon says or sliding tiles",
@@ -33,7 +33,7 @@ export default [
     img: "/images/projects/doggopedia.gif",
     title: "Doggopedia",
     technologies: ["React", "Wikipedia API"],
-    url: "https://github.com/magiqfoxx/doggopedia",
+    url: "https://magiqfoxx.github.io/doggopedia/#/",
     github: "https://github.com/magiqfoxx/doggopedia",
     description: "Learn about dog breeds and test your knowledge",
   },
@@ -41,7 +41,6 @@ export default [
     img: "/images/projects/city-break.gif",
     title: "City Break",
     technologies: ["React", "different APIs"],
-    url: "https://github.com/magiqfoxx/city-break",
     github: "https://github.com/magiqfoxx/city-break",
     description: "Get basic information on the place you want to go to",
   },
@@ -49,7 +48,6 @@ export default [
     img: "/images/projects/dog-center.gif",
     title: "Dog Adoption Center",
     technologies: ["React", "React-Router"],
-    url: "https://github.com/magiqfoxx/dog-adoption-center",
     github: "https://github.com/magiqfoxx/dog-adoption-center",
     description:
       "Our dogs are looking for a forever home and you just might be it",
