@@ -44,22 +44,22 @@ export default function () {
           <Picture
             src="/images/stella/4.jpg"
             alt="Cat looking down at a dead green bug"
-            onClick={() => viewPicture("/stella/4.jpg")}
+            onClick={() => viewPicture("/images/stella/4.jpg")}
           />
           <Picture
             src="/images/stella/5.jpg"
             alt="Cat chilling in the sun"
-            onClick={() => viewPicture("/stella/5.jpg")}
+            onClick={() => viewPicture("/images/stella/5.jpg")}
           />
           <Picture
             src="/images/stella/2.jpg"
             alt="Cat dressed up in a jacket, ready for a walk"
-            onClick={() => viewPicture("/stella/2.jpg")}
+            onClick={() => viewPicture("/images/stella/2.jpg")}
           />
           <Picture
             src="/images/stella/3.jpg"
             alt="Cat sitting on top of a fridge, resembles a gremlin"
-            onClick={() => viewPicture("/stella/3.jpg")}
+            onClick={() => viewPicture("/images/stella/3.jpg")}
           />
         </Pictures>
 
