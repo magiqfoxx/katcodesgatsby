@@ -39,7 +39,7 @@ const Terminal = ({ message }) => {
 
   const onSubmit = e => {
     e.preventDefault()
-    runCommand(command)
+    command && runCommand(command)
   }
   return (
     <Window onClick={onFocus}>

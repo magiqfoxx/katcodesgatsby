@@ -17,8 +17,8 @@ const Project = ({ img, title, technologies, url, github, description }) => {
             <Link href={github}>Code</Link>
             <Stack>
               <ul>
-                {technologies.map(t => {
-                  return <li>{t}</li>
+                {technologies.map((t, i) => {
+                  return <li key={i}>{t}</li>
                 })}
               </ul>
             </Stack>

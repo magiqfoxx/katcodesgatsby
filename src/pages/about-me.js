@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
 
 import Header from "../components/Header"
 import Layout from "../components/Layout"
@@ -11,10 +12,13 @@ import {
 } from "../components/about-me/styled"
 
 export default function () {
+  useEffect(() => {
+    navigate("#start")
+  }, [])
   return (
-    <Layout id="start">
+    <Layout>
       <Header />
-      <Confidential>
+      <Confidential id="start">
         <DocumentHeader>
           <Icon src="/images/stamp.png" />
           <Address>

@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
 
 import Header from "../components/Header"
 import Layout from "../components/Layout"
@@ -7,6 +8,9 @@ import Project from "../components/projects/Project"
 import { Classified, Title } from "../components/projects/styled"
 
 export default function () {
+  useEffect(() => {
+    navigate("#start")
+  }, [])
   return (
     <Layout>
       <Header />

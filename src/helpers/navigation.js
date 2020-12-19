@@ -18,7 +18,7 @@ const navigateToDirectory = page => {
   if (home.includes(page)) {
     navigate(`/`)
   } else {
-    navigate(`/${page}/#start`)
+    navigate(`/${page}`)
   }
 }
 const navigateTo = page => {

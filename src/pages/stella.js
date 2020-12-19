@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { navigate } from "gatsby"
 
 import Header from "../components/Header"
 import Layout from "../components/Layout"
@@ -16,6 +17,9 @@ import {
 } from "../components/Stella/styled"
 
 export default function () {
+  useEffect(() => {
+    navigate("#start")
+  }, [])
   const [picture, setPicture] = useState("")
   const [isOpen, setIsOpen] = useState(false)
 
@@ -26,7 +30,7 @@ export default function () {
   return (
     <Layout>
       <Header />
-      <Wrapper>
+      <Wrapper id="start">
         <Title>Have you seen this cat?</Title>
         <Image src="/images/stella/1.jpg" alt="Close up of cat's face" />
         <Button onClick={() => alert("Good for you!")}>I have now</Button>
