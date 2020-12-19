@@ -1,6 +1,15 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://katcodes.com`,
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 5000,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
