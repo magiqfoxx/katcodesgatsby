@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://katcodes.com`,
+    title: "Katcodes",
+    description:
+      "A while ago, Kat decided to learn to code. Here's what happened next...",
+    url: "https://katcodes.com",
+    image: "/favicon.ico",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
