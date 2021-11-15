@@ -3,7 +3,7 @@ module.exports = {
     title: "Katcodes",
     description:
       "A while ago, Kat decided to learn to code. Here's what happened next...",
-    url: "https://katcodes.com",
+    siteUrl: "https://katcodes.com",
     image: "/favicon.ico",
   },
   plugins: [
